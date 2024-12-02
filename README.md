@@ -1,4 +1,3 @@
-# my inter face by use a front end 
 # Library Project - Frontend
 
 Welcome to the Library Project Frontend! This project aims to provide a user-friendly interface for managing books and their categories.
@@ -31,5 +30,4 @@ This application includes features for:
 
 1. Clone the repository from GitHub:
    ```bash
-
-(https://github.com/deabow/myproject.git)
+   git clone https://github.com/username/repo-name.git
