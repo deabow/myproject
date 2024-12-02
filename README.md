@@ -31,5 +31,5 @@ This application includes features for:
 
 1. Clone the repository from GitHub:
    ```bash
-[   git clone https://github.com/username/repo-name.git
-](https://github.com/deabow/myproject.git)
+
+(https://github.com/deabow/myproject.git)
