@@ -1,0 +1,110 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg, #f0f0f0);
+    color: var(--text, #333);
+}
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.hidden { display: none; }
+#login-screen input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+#login-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #25d366;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#chat-screen {
+    height: 100vh;
+}
+header {
+    background: var(--header, #075e54);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#messages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    width: 100%;
+}
+.message {
+    max-width: 60%;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    position: relative;
+    animation: pop 0.2s ease-out;
+}
+.sent { background: #dcf8c6; margin-left: auto; }
+.received { background: #fff; margin-right: auto; }
+.timestamp {
+    font-size: 0.7rem;
+    color: gray;
+    text-align: right;
+}
+footer {
+    display: flex;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    background: var(--footer, #eee);
+}
+footer input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+footer button {
+    padding: 0 15px;
+    border: none;
+    background: #25d366;
+    color: white;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+.typing { padding-left: 1rem; font-style: italic; color: gray; }
+#emoji-panel {
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+#emoji-panel button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+@keyframes pop {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+.dark {
+    --bg: #121212;
+    --text: #eee;
+    --header: #333;
+    --footer: #1e1e1e;
+}
